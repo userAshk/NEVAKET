@@ -1,0 +1,24 @@
+@import "intro";
+
+
+
+
+$primary: rgba(78, 52, 37, 1);
+$secondary: rgba(231, 197, 107, 1);
+$roboto: 'Roboto', sans-serif;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $roboto;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.container{
+    margin: 0;
+    margin-left: 60px;
+    margin-right: 60px;
+}
