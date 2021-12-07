@@ -1,0 +1,28 @@
+$primary: rgba(78, 52, 37, 1);
+$secondary: rgba(231, 197, 107, 1);
+
+footer{
+    background-color: $primary;
+    
+    color: #fff;
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+        img{
+            padding-right: 10px;
+            width: 32px;
+        }
+        p{
+            padding: 20px 0;
+        }
+        .logo{
+            font-size: 46px;
+        }
+        .head{
+            display: flex;
+            margin-top: 20px;
+        }
+    }
+}

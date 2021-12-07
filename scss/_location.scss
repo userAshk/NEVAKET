@@ -1,0 +1,21 @@
+$primary: rgba(78, 52, 37, 1);
+$secondary: rgba(231, 197, 107, 1);
+
+.location{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .map{
+        border: 1px solid $primary;
+        
+    }
+    .loc__desc{
+        width: 676px;
+        height: 401px;
+        margin-left: -40px;
+        background: #E7C56B;
+        padding: 30px 100px 30px 40px;
+        h2{
+            padding-bottom: 20px;
+        }
+    }
+}

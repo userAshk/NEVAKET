@@ -1,7 +1,12 @@
 @import "intro";
-
-
-
+@import "header";
+@import "feedback";
+@import "projects";
+@import 'contact';
+@import "history";
+@import "location";
+@import "about";
+@import "footer";
 
 $primary: rgba(78, 52, 37, 1);
 $secondary: rgba(231, 197, 107, 1);
@@ -12,6 +17,10 @@ $roboto: 'Roboto', sans-serif;
     margin: 0;
     box-sizing: border-box;
     font-family: $roboto;
+}
+body,
+html{
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
