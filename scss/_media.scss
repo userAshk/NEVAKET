@@ -5,6 +5,42 @@
 
 }
 
-@media only screen and (min-width: 768px) {
-
+@media only screen and (max-width: 768px) {
+    .header{
+        .logo{
+            font-size: 35px;
+        }
+        .links{
+            display: none;
+        }
+        
+        .menu-btn{
+            display: block;
+            width: 50px;
+        }
+    }
+    .feedback{
+        max-width: 720px;
+        .fb__item{
+            img{
+                width: 48px;
+                height: 48px;
+            }
+            p{
+                padding: 20px;
+            }
+        }
+    }
+    .contact{
+        .contact__layer{
+            .contact__inner{
+                display: grid;
+                grid-template-columns: 1fr ;
+                
+                .con__item{
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
 }
