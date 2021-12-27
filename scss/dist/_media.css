@@ -1,0 +1,12 @@
+.location .map {
+  width: 470px;
+  height: 374px;
+}
+.location .loc__desc {
+  width: 398px;
+  height: 355px;
+  top: 10px;
+}
+.location .loc__desc h2 {
+  margin-bottom: 20px;
+}

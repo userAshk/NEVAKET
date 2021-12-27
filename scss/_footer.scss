@@ -1,28 +1,48 @@
 $primary: rgba(78, 52, 37, 1);
 $secondary: rgba(231, 197, 107, 1);
 
-footer{
+footer {
     background-color: $primary;
-    
     color: #fff;
-    .footer{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         padding-top: 30px;
-        img{
+        .logo {
+            font-size: 46px;
+        }
+
+        img {
             padding-right: 10px;
             width: 32px;
         }
-        p{
+
+        p {
             padding: 20px 0;
         }
-        .logo{
-            font-size: 46px;
-        }
-        .head{
+
+        .head {
             display: flex;
+
             margin-top: 20px;
         }
+
+        .social-footer {
+            display: flex;
+            justify-content: center;
+            img {
+                margin-top: 10px;
+                width: 36px;
+                height: 36px;
+            }
+        }
     }
+    .footer-logo{
+        font-size: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
