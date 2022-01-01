@@ -126,6 +126,89 @@ header {
   margin: 0 1em;
 }
 
+#lightbox_container {
+  position: fixed;
+  text-align: center;
+  left: 0px;
+  top: 100px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#show {
+  display: none;
+}
+
+#overlay {
+  background: rgba(33, 33, 33, 0.8);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+#lightbox {
+  display: block;
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: 20px;
+  margin-top: 20px;
+  background: #8D7E76;
+  z-index: 100;
+}
+
+#hide {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.modal-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding: 20px;
+  color: #fff;
+}
+
+.modal-container .modal-p {
+  color: #fff;
+  display: block;
+}
+
+.modal-container .modal-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding-left: 10px;
+}
+
+.modal-container .modal-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding-left: 10px;
+}
+
+.modal-container .modal-button {
+  display: block;
+  padding: 20px;
+  color: #000;
+  background: #e7c56b;
+  font-size: 20px;
+}
+
 .feedback {
   display: -ms-grid;
   display: grid;
@@ -545,7 +628,7 @@ header {
   .order p {
     display: none;
   }
-  .order input {
+  .order .order-input {
     display: none;
   }
   .order .order__item {
@@ -573,7 +656,31 @@ header {
   .order .order__item h2 {
     font-size: 26px;
   }
-  .order .order__item .intro-order {
+  .order .order__item .intro__order {
+    display: none;
+  }
+  .order .order__item #show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 30px;
+    padding: 21px 59px;
+    background-color: #e7c56b;
+    color: #000;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    width: 280px;
     height: 65px;
   }
   .contact {

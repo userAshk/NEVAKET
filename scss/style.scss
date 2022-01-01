@@ -1,5 +1,6 @@
 @import "intro";
 @import "header";
+@import 'modal';
 @import "feedback";
 @import "projects";
 @import 'contact';
@@ -38,3 +39,4 @@ a{
 ::placeholder{
     color: #fff;
 }
+
