@@ -101,10 +101,18 @@
     .history{
         .container{
             margin: 0 10px;
+            .history__grid{
+                display: grid;
+                grid-template-columns: 1fr;
+                text-align: center;
+                .hist__item{
+                    img{
+                        width: 90%;
+                    }
+                }
+            }
         }
-        .history__grid{
-            grid-template-columns: 1fr;
-        }
+
     }
     
     .feedback {
@@ -147,7 +155,6 @@
             height: auto;
             padding: 20px;
             top: 0;
-            height: 386px;
         }
     }
 
@@ -259,7 +266,6 @@
         }
     }
     .location{
-
         height: 700px;
         .map{
             width: 470px;
