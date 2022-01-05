@@ -5,20 +5,25 @@ $secondary: rgba(231, 197, 107, 1);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    margin-left: 5em;
-    margin-right: 5em;
-    margin-top: -2em;
+    margin-top: -10em;  
     .fb__item{
         background-color: $secondary;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        height: 100%;
+        width: 100%;
+        min-height: 217px;
+
         img{
             margin-top: 40px;
             border: none;
         }
         p{
+            display: block;
+            width: 100%;
+            max-width: 317px;
             padding: 50px;
         }   
     }

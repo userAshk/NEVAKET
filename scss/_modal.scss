@@ -39,8 +39,8 @@
     cursor: pointer;
 }
 .modal-container{
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     color: #fff;
     .modal-p{
@@ -64,7 +64,6 @@
         color: #000;
         background: rgba(231, 197, 107, 1);
         font-size: 20px;
-        width: 280px;
     }
 }
 

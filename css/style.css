@@ -1,6 +1,6 @@
 .intro {
   width: 100%;
-  height: 800px;
+  height: 1000px;
   background: url(../img/hero.png) center no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -25,7 +25,7 @@
 }
 
 .order .order__item {
-  margin-top: 7em;
+  margin-top: 12em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,12 +90,6 @@ header {
   z-index: 100000;
 }
 
-.header-bg {
-  background: #4e3425;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,7 +104,14 @@ header {
 }
 
 .header .logo {
-  font-size: 65px;
+  display: block;
+  height: 80px;
+  width: 150px;
+}
+
+.header .logo img {
+  width: 100%;
+  height: 100%;
 }
 
 .header .links a {
@@ -168,10 +169,13 @@ header {
 }
 
 .modal-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 20px;
   color: #fff;
 }
@@ -207,7 +211,6 @@ header {
   color: #000;
   background: #e7c56b;
   font-size: 20px;
-  width: 280px;
 }
 
 .feedback {
@@ -218,9 +221,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 5em;
-  margin-right: 5em;
-  margin-top: -2em;
+  margin-top: -10em;
 }
 
 .feedback .fb__item {
@@ -236,6 +237,9 @@ header {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  height: 100%;
+  width: 100%;
+  min-height: 217px;
 }
 
 .feedback .fb__item img {
@@ -244,6 +248,9 @@ header {
 }
 
 .feedback .fb__item p {
+  display: block;
+  width: 100%;
+  max-width: 317px;
   padding: 50px;
 }
 
@@ -724,11 +731,16 @@ header {
     margin-right: 10px;
     margin-top: -2em;
   }
+  .contact .contact__layer .container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   .contact .contact__layer .contact__inner {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    gap: 0;
   }
   .contact .contact__layer .contact__inner .con__item {
     margin: 10px auto;
@@ -777,9 +789,12 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }
 
@@ -841,8 +856,8 @@ header {
     text-align: center;
   }
   .history .history__grid {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
   }
   .location {
     height: 700px;

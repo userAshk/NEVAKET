@@ -126,11 +126,16 @@
 
     .contact{
         .contact__layer{
+            .container{
+                margin-left: 10px;
+                margin-right: 10px;
+            }
             .contact__inner{
                 display: grid;
                 grid-template-columns: 1fr ;
-                
+                gap: 0;
                 .con__item{
+
                     margin: 10px auto;
                     h2{
                         padding-top: 20px;
@@ -177,8 +182,8 @@
             .footer {
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
-
+                align-items: center;
+                justify-content: start;
             }
         }
     }
@@ -262,7 +267,7 @@
     }
     .history{
         .history__grid{
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
         }
     }
     .location{
